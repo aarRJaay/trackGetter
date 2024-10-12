@@ -1,8 +1,19 @@
 var now = new Date();
 var startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 var unixTimestamp = startOfDay / 1000; // const today = new Date();
+const fs = require("fs");
+const filePath = "/home/rj/.config/trackGetter/data.json";
 
-const apiKey = "000";
+fs.readFile(filePath, "utf8", (err, data) => {
+  if (err) {
+    console.error(err);
+  } else {
+    const apiKey = data.toString().trim();
+    grabTracks(
+      `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=aarrjaay&api_key=${apiKey}&from=${unixTimestamp}&format=json`,
+    );
+  }
+});
 
 async function grabTracks(url) {
   try {
@@ -16,8 +27,3 @@ async function grabTracks(url) {
     console.error("Error fetching the webpage:", error);
   }
 }
-
-grabTracks(
-  `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=aarrjaay&${apiKey}&from=${unixTimestamp}&format=json`,
-);
-// fetchWebpage("https://www.bible.com/verse-of-the-day");k
