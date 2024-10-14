@@ -1,0 +1,49 @@
+{
+  "recenttracks": {
+    "track": [
+      {
+        "artist": {
+          "mbid": "",
+          "#text": "2WEI"
+        },
+        "streamable": "0",
+        "image": [
+          {
+            "size": "small",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/34s\/b2853818646a8709595a011ac1339886.jpg"
+          },
+          {
+            "size": "medium",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/64s\/b2853818646a8709595a011ac1339886.jpg"
+          },
+          {
+            "size": "large",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/174s\/b2853818646a8709595a011ac1339886.jpg"
+          },
+          {
+            "size": "extralarge",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/300x300\/b2853818646a8709595a011ac1339886.jpg"
+          }
+        ],
+        "mbid": "",
+        "album": {
+          "mbid": "",
+          "#text": "Rise Up"
+        },
+        "name": "Rise Up",
+        "url": "https:\/\/www.last.fm\/music\/2WEI\/_\/Rise+Up",
+        "date": {
+          "uts": "1728828118",
+          "#text": "13 Oct 2024, 14:01"
+        }
+      }
+    ],
+    "@attr": {
+      "user": "aarRJaay",
+      "totalPages": "1",
+      "page": "1",
+      "perPage": "50",
+      "total": "1"
+    }
+  }
+}
