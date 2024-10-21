@@ -54,7 +54,8 @@ function showData(data) {
       // );
 
       writeStream.write(
-        `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]} - ${jsonObject.recenttracks.track[i].artist["#text"]} - ${jsonObject.recenttracks.track[i].date["#text"]}`,
+        // `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]} - ${jsonObject.recenttracks.track[i].artist["#text"]} - ${jsonObject.recenttracks.track[i].date["#text"]}`,
+        `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]}- ${jsonObject.recenttracks.track[i].album["#text"]}`,
       );
       writeStream.write("\n");
     }

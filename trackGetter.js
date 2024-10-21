@@ -34,7 +34,9 @@ function showData(data) {
     const jsonObject = JSON.parse(data);
     for (var i = 0; i < jsonObject.recenttracks.track.length; i++) {
       console.log(
-        `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]} - ${jsonObject.recenttracks.track[i].artist["#text"]} - ${jsonObject.recenttracks.track[i].date["#text"]}`,
+        `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]}- ${jsonObject.recenttracks.track[i].album["#text"]}`,
+        // `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]} - ${jsonObject.recenttracks.track[i].artist["#text"]} - ${jsonObject.recenttracks.track[i].date["#text"]}`,
+        // `${jsonObject.recenttracks.track[i].name} - ${jsonObject.recenttracks.track[i].album["#text"]} - ${jsonObject.recenttracks.track[i].artist["#text"]} - ${jsonObject.recenttracks.track[i].date["#text"]}`,
       );
     }
   } catch (error) {
